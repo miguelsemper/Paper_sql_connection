@@ -22,6 +22,8 @@ while True:
         cursor.execute("INSERT INTO Papers (title,main_author_id,pub_year,publication,summary) VALUES ('test title',1,2022,'test publication','This is a test summary for the database connection.')")
         cnxn.commit()
         cursor.close()
+        cursor.open()
+        cursor.close()
         break
 
 window.close()
